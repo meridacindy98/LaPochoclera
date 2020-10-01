@@ -1,0 +1,35 @@
+<div class="container">
+
+    <app-genres [title]="'Peliculas'" [type]="'movie'"></app-genres>
+    <hr>
+
+    <div *ngIf="!forGenre">
+
+        <!-- Tendencias -->
+        <app-carousel [title]="'Tendencias'" [showOptions]="false" [idCarousel]="'mostPopular'" [type]="'movie'" [getData]="'mostPopular'"></app-carousel>
+
+        <br>
+        <br>
+        <!-- Comedias -->
+        <app-carousel [title]="'Comedias'" [showOptions]="false" [idCarousel]="'comedy'" [type]="'movie'" [genrerId]="35" [getData]="'forGenrer'"></app-carousel>
+
+        <br>
+        <br>
+        <!-- Ciencia ficcion -->
+        <app-carousel [title]="'Ciencia ficcion'" [showOptions]="false" [idCarousel]="'science-fiction'" [type]="'movie'" [genrerId]="878" [getData]="'forGenrer'"></app-carousel>
+
+        <br>
+        <br>
+        <!-- Romanticas -->
+        <app-carousel [title]="'Peliculas romanticas'" [showOptions]="false" [idCarousel]="'romance'" [type]="'movie'" [genrerId]="10749" [getData]="'forGenrer'"></app-carousel>
+
+        <br>
+        <br>
+        <!-- Animaciones -->
+        <app-carousel [title]="'Animaciones'" [showOptions]="false" [idCarousel]="'animation'" [type]="'movie'" [genrerId]="16" [getData]="'forGenrer'"></app-carousel>
+    </div>
+
+    <div *ngIf="forGenre">
+        <p>se selecciono un genero</p>
+    </div>
+</div>

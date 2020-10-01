@@ -1,0 +1,27 @@
+<div class="mt-1 container">
+
+    <!-- Los mas populares -->
+    <app-carousel [title]="'Los mas populares'" [showOptions]="true" [idCarousel]="'mostPopular'" [type]="'movie'" [getData]="'mostPopular'"></app-carousel>
+
+    <br>
+    <br>
+    <!-- Mejor calificados -->
+    <app-carousel [title]="'Mejor calificadas'" [showOptions]="true" [idCarousel]="'topRated'" [type]="'tv'" [getData]="'topRated'"></app-carousel>
+
+    <br>
+    <br>
+    <!-- Comedias -->
+    <app-carousel [title]="'Comedias'" [showOptions]="true" [idCarousel]="'comedy'" [type]="'movie'" [genrerId]="35" [getData]="'forGenrer'"></app-carousel>
+
+    <br>
+    <br>
+    <!-- Realitys -->
+    <app-carousel [title]="'Realitys'" [showOptions]="false" [idCarousel]="'reality'" [type]="'tv'" [genrerId]="10764" [getData]="'forGenrer'"></app-carousel>
+
+    <br>
+    <br>
+    <!-- Programas infantiles -->
+    <app-carousel [title]="'Programas infantiles'" [showOptions]="false" [idCarousel]="'kidsTv'" [type]="'tv'" [genrerId]="10762" [getData]="'forGenrer'"></app-carousel>
+
+
+</div>

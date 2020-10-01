@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand" href="#">La Pochoclera</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- Inicio -->
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Inicio</a>
+            </li>
+
+            <!-- Peliculas -->
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/movies']" routerLinkActive="active">Peliculas</a>
+            </li>
+
+            <!-- Programas -->
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/tvShows']" routerLinkActive="active">Programas</a>
+            </li>
+
+            <!-- Buscador -->
+            <li class="nav-item">
+                <div id="search" (clickOutside)="showInput = false" (click)="showInput = true">
+                    <button class="search_icon"><i class="fa fa-search"></i></button>
+                    <input [ngClass]="{ 'show_search_input': showInput }" class="search_input" type="text" id="input-search">
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,1 +1,223 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+hr {
+    border-color: white;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: white;
+}
+
+.card-colour {
+    background: black !important;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    margin-left: 5px;
+}
+
+.img-thumb {
+    width: 100px;
+    height: 100px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white
+}
+
+.hr-style {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1;
+    border-top: 1px solid white;
+}
+
+.border-img {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.slow {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+/* search */
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background: black;
+    border: none;
+    outline: none;
+}
+
+.search_icon:focus {
+    outline: none;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.show_search_input {
+    padding: 0 10px;
+    width: 300px;
+    caret-color: white;
+    transition: width 0.4s linear;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/* carrucel */
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+#control:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: grey;
+}
+
+.card-deck .card {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+/* button group */
+
+.btn-group .button {
+    border-radius: 0;
+}
+
+.btn-group .button:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+
+/* .btn-group .button:only-child {
+    border-radius: 6px;
+    margin-left: 0;
+}
+ */
+
+.btn-group .button:last-child {
+    border-radius: 0 20px 20px 0;
+    margin-left: -1px;
+}
+
+.selected {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}

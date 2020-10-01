@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>{{ title }}</h1>
+    <div class="ml-3">
+        <button class="mt-1 btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Géneros
+        </button>
+        <div class="dropdown-menu dropdown-multicol fadeIn fast" aria-labelledby="dropdownMenuButton">
+            <div class="row">
+                <div class="col" *ngFor="let genres of genresArray">
+                    <a class="dropdown-item" [routerLink]="['/movies', genrer.id]" *ngFor="let genrer of genres"> {{ genrer.name }} </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
